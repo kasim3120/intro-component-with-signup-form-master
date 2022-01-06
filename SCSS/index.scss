@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid:'left right';
+    background: url(../images/bg-intro-desktop.png) hsl(0, 100%, 74%) ;
+}
+left{
+    color:#fff;
+    padding:200px 100px;
+    h1{
+        
+    }
+}
+right{
+    padding:200px 100px;
+    button{
+        padding: 5px 100px;
+        border-radius: 5px ;
+        background: hsl(248, 32%, 49%);
+        box-shadow: 0 10px 0px 5% #888888;
+    }
+}
