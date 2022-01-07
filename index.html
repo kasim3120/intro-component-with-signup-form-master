@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./SCSS/index.css">
-  <title>Frontend Mentor | Intro component with sign up form</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="./SCSS/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<title>Frontend Mentor | Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,33 +18,35 @@
   </style>
 </head>
 <body>
-  <left>
-    <h1>Learn to code by watching others</h1>
-    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-    but understanding how developers think is invaluable.</p>
-  </left>
-  
-  <right>
-  <button>Try it free 7 days then $20/mo. thereafter</button>
-  
-  <form action=" ">
-    <input readonly='123'>First Name</input> 
-    <input>Last Name</input> 
-    <input>Email Address</input> 
-    <input>Password</input> 
-  </form>
+	<main>
+		<left>
+			<h1>Learn to code by watching others</h1>
+			<p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+			but understanding how developers think is invaluable.</p>
+		</left>
+			
+		<right>
+			<button>Try it free 7 days <span class='small-font'>then $20/mo. thereafter</span></button>
+			
+		<form action=" ">
+			<input placeholder='First Name'></input> 
+			<input placeholder="Last Name"></input> 
+			<input placeholder='Email Address'></input> 
+			<input placeholder='Password'></input> 
+			
 
-  <button>Claim your free trial</button>
+			<button class='submit'>CLAIM YOUR FREE TRIAL</button>
 
-  By clicking the button, you are agreeing to our Terms and Services
-</right>
-  
-
-</body>
+			<p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+		</form>
+		</right>
+	</main>
 <footer>
   <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Jason Lin</a>.
   </p>
 </footer>
+<script src="./src/index.js"></script>
+</body>
 </html>

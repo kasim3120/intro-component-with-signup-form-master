@@ -2,27 +2,83 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body {
-  display: grid;
-  grid: 'left right';
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url(../images/bg-intro-desktop.png) #ff7a7a;
 }
 
 left {
+  margin: 50px 5px;
+  width: 500px;
+  height: auto;
   color: #fff;
-  padding: 200px 100px;
+}
+
+left h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+left p {
+  font-size: 15px;
+  line-height: 1.5rem;
 }
 
 right {
-  padding: 200px 100px;
+  margin: 50px 5px;
+  width: 500px;
+  height: auto;
 }
 
 right button {
-  padding: 5px 100px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  width: 500px;
   border-radius: 5px;
   background: #6055a5;
-  box-shadow: 0 10px 0px 5% #888888;
+  box-shadow: 0 8px rgba(105, 105, 105, 0.315);
+  border: none;
+  color: #fff;
+}
+
+right button .small-font {
+  font-size: 12px;
+}
+
+right form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 50px;
+}
+
+right form input {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #dbd9d9;
+}
+
+right form p {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+right form p span {
+  color: #ff7a7a;
+}
+
+right form .submit {
+  width: auto;
+  padding: 10px 30px;
+  background: #38cc8c;
+  box-shadow: 0 5px #50b489;
 }
 /*# sourceMappingURL=index.css.map */

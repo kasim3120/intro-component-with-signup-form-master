@@ -2,26 +2,74 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
 }
 
-body{
-    display: grid;
-    grid:'left right';
+$font-white:#fff;
+$card-width:500px;
+$card-height:auto;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url(../images/bg-intro-desktop.png) hsl(0, 100%, 74%) ;
 }
 left{
-    color:#fff;
-    padding:200px 100px;
+    margin:50px 5px;
+    width:$card-width;
+    height:$card-height;
+    color:$font-white;
     h1{
-        
+        font-size: 40px;
+        font-weight:800;
+    }
+    p{
+        font-size: 15px;
+        line-height: 1.5rem;
     }
 }
 right{
-    padding:200px 100px;
+    margin:50px 5px;
+    width:$card-width;
+    height:$card-height;
     button{
-        padding: 5px 100px;
-        border-radius: 5px ;
+        margin-bottom:20px;
+        padding:10px 30px;
+        width:$card-width;
+        border-radius: 5px;
         background: hsl(248, 32%, 49%);
-        box-shadow: 0 10px 0px 5% #888888;
+        box-shadow: 0 8px hsla(0, 0%, 41%, 0.315) ;
+        border:none;
+        color:$font-white;
+        .small-font{
+            font-size: 12px;
+        }
+    }
+    form{
+        width:$card-width;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 5px ;
+        padding: 20px 50px;
+        input{
+            margin-bottom: 10px;
+            padding:15px;
+            border-radius: 5px;
+            border:1px solid #dbd9d9;
+        }
+        p{
+            font-size: 8px;
+            font-weight:bold;
+            span{
+                color:hsl(0, 100%, 74%)
+            }
+        }
+        .submit{
+            width:auto;
+            padding:10px 30px;
+            background: hsl(154, 59%, 51%);
+            box-shadow: 0 5px hsl(154, 40%, 51%);
+        }
     }
 }
