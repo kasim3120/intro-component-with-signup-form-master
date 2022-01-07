@@ -75,10 +75,11 @@ right form p span {
   color: #ff7a7a;
 }
 
-right form .submit {
+right form #submit {
   width: auto;
   padding: 10px 30px;
   background: #38cc8c;
   box-shadow: 0 5px #50b489;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

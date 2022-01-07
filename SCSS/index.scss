@@ -65,11 +65,12 @@ right{
                 color:hsl(0, 100%, 74%)
             }
         }
-        .submit{
+        #submit{
             width:auto;
             padding:10px 30px;
             background: hsl(154, 59%, 51%);
             box-shadow: 0 5px hsl(154, 40%, 51%);
+            cursor:pointer 
         }
     }
 }
