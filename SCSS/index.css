@@ -44,10 +44,11 @@ right button {
   box-shadow: 0 8px rgba(105, 105, 105, 0.315);
   border: none;
   color: #fff;
+  font-weight: 600;
 }
 
 right button .small-font {
-  font-size: 12px;
+  font-weight: 200;
 }
 
 right form {
@@ -59,11 +60,31 @@ right form {
   padding: 20px 50px;
 }
 
-right form input {
+right form .userFirstNameInput, right form .userLastNameInput, right form .userEmailInput, right form .userPasswordInput {
   margin-bottom: 10px;
-  padding: 15px;
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   border: 1px solid #dbd9d9;
+}
+
+right form .userFirstNameInput input, right form .userLastNameInput input, right form .userEmailInput input, right form .userPasswordInput input {
+  margin: 0.1rem 1rem;
+  padding: 1rem;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-weight: 900;
+}
+
+right form .userFirstNameInput .errorIcon, right form .userLastNameInput .errorIcon, right form .userEmailInput .errorIcon, right form .userPasswordInput .errorIcon {
+  visibility: hidden;
+}
+
+right form .emptyFirstName, right form .emptyLastName, right form .emptyEmail, right form .emptyPassword {
+  margin: auto 3px;
+  text-align: right;
+  color: #ff7a7a;
 }
 
 right form p {
@@ -75,11 +96,105 @@ right form p span {
   color: #ff7a7a;
 }
 
-right form #submit {
+right form .submitData {
   width: auto;
   padding: 10px 30px;
   background: #38cc8c;
   box-shadow: 0 5px #50b489;
   cursor: pointer;
+}
+
+right form .submitData:hover {
+  background-color: #67febd;
+  box-shadow: 0 5px #94d1b7;
+}
+
+@media only screen and (max-width: 414px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: auto;
+    color: #fff;
+  }
+  main left h1 {
+    font-size: 40px;
+    margin: 2rem;
+  }
+  main left p {
+    font-size: 20px;
+    line-height: 2rem;
+    padding: 20px;
+  }
+  main right {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main right button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    width: auto;
+  }
+  main right form {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+  }
+  main right form .userFirstNameInput, main right form .userLastNameInput, main right form .userEmailInput, main right form .userPasswordInput {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #dbd9d9;
+  }
+  main right form .userFirstNameInput input, main right form .userLastNameInput input, main right form .userEmailInput input, main right form .userPasswordInput input {
+    margin: 0.1rem 1rem;
+    padding: 1rem 0.5rem;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  main right form .userFirstNameInput .errorIcon, main right form .userLastNameInput .errorIcon, main right form .userEmailInput .errorIcon, main right form .userPasswordInput .errorIcon {
+    visibility: hidden;
+  }
+  main right form .emptyFirstName, main right form .emptyLastName, main right form .emptyEmail, main right form .emptyPassword {
+    margin: auto 3px;
+    text-align: right;
+    color: #ff7a7a;
+  }
+  main right form p {
+    font-size: 8px;
+    font-weight: bold;
+  }
+  main right form p span {
+    color: #ff7a7a;
+  }
+  main right form .submitData {
+    width: auto;
+    margin: 10px 0px;
+    padding: 10px 30px;
+    background: #34cb8a;
+    box-shadow: 0 5px #4db386;
+  }
+  main right form .rightFooterText {
+    padding: 5px 10px;
+    color: #dbd9d9;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */
