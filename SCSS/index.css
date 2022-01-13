@@ -66,6 +66,7 @@ right form .userFirstNameInput, right form .userLastNameInput, right form .userE
   align-items: center;
   border-radius: 5px;
   border: 1px solid #dbd9d9;
+  background: #fff;
 }
 
 right form .userFirstNameInput input, right form .userLastNameInput input, right form .userEmailInput input, right form .userPasswordInput input {
@@ -75,6 +76,8 @@ right form .userFirstNameInput input, right form .userLastNameInput input, right
   border: none;
   outline: none;
   font-weight: 900;
+  background: #fff;
+  transition: background-color 5000s ease-out 0.5s;
 }
 
 right form .userFirstNameInput .errorIcon, right form .userLastNameInput .errorIcon, right form .userEmailInput .errorIcon, right form .userPasswordInput .errorIcon {
@@ -160,6 +163,7 @@ right form .submitData:hover {
     align-items: center;
     border-radius: 5px;
     border: 1px solid #dbd9d9;
+    background: #fff;
   }
   main right form .userFirstNameInput input, main right form .userLastNameInput input, main right form .userEmailInput input, main right form .userPasswordInput input {
     margin: 0.1rem 1rem;

@@ -61,6 +61,8 @@ right{
             align-items: center;
             border-radius: 5px;
             border:1px solid #dbd9d9;
+            background: #fff;
+            
             input{
                 margin:0.1rem 1rem;
                 padding:1rem;
@@ -68,6 +70,8 @@ right{
                 border: none;
                 outline: none;
                 font-weight:900;
+                background: #fff;
+                transition:background-color 5000s ease-out 0.5s ;
             }
             .errorIcon{
                 visibility :hidden;
@@ -148,6 +152,7 @@ right{
                     align-items: center;
                     border-radius: 5px;
                     border:1px solid #dbd9d9;
+                    background: #fff;
                     input{
                         margin:0.1rem 1rem;
                         padding:1rem 0.5rem;

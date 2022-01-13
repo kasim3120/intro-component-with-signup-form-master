@@ -30,32 +30,60 @@
 			
 		<form action='reqUser' id='myForm' name='myForm' >
 			<div class='userFirstNameInput'>
-				<input type='text' id='userFirstName' name='userFirstName' placeholder='First Name' pattern="[a-z]{2,10}">
+				<input 
+					type='text' 
+					id='userFirstName' 
+					name='userFirstName' 
+					placeholder='First Name' 
+					maxlength="10" 
+					minlength="2" >
 				</input> 
 				<svg class='errorIcon' width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
 			</div>
 			<p class='emptyFirstName'></p>
 
 			<div class='userLastNameInput'>
-				<input type='text' id='userLastName' name='userLastName' placeholder='Last Name' pattern='[a-z]{2,10}'>
+				<input 
+					type='text' 
+					id='userLastName' 
+					name='userLastName' 
+					placeholder='Last Name'  
+					maxlength="10" 
+					minlength="2">
 				</input>
 				<svg class='errorIcon' width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
 			</div>
 			<p class='emptyLastName'></p>
 
 			<div class='userEmailInput'>
-				<input type='email' id='userEmail' name='userEmail' placeholder='Email Address' ></input> 
+				<input 
+					type='email' 
+					id='userEmail' 
+					name='userEmail' 
+					placeholder='Email Address'>
+				</input> 
 				<svg class='errorIcon' width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
 			</div>
 			<p class='emptyEmail'></p>
 
 			<div class='userPasswordInput'>
-				<input type='password' id='userPassword' name='userPassword' placeholder='Password' ></input> 
+				<input 
+					type='password' 
+					id='userPassword' 
+					name='userPassword'
+					placeholder='Password' 
+					pattern='[a-z,A-Z]{2,10}'>
+				</input> 
 				<svg class='errorIcon' width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
 			</div>
 			<p class='emptyPassword'></p>
 			
-			<button type='submit' class='submitData' id='submitData'>CLAIM YOUR FREE TRIAL</button>
+			<button 
+				type='submit' 
+				class='submitData' 
+				id='submitData'>
+				CLAIM YOUR FREE TRIAL
+			</button>
 
 			<p class='rightFooterText'>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
 		</form>

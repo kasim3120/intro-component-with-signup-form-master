@@ -2,100 +2,88 @@ let myForm = document.getElementById("myForm")
 myForm.addEventListener('submit', function(e){
   e.preventDefault()
 })
-
+//FirstName
 let userFirstName = document.getElementById('userFirstName');
 let emptyFirstName = document.querySelector(".emptyFirstName");
+//LastName
 let userLastName = document.getElementById('userLastName');
 let emptyLastName = document.querySelector(".emptyLastName");
+//UserEmail
 let userEmail = document.getElementById('userEmail');
 let emptyEmail = document.querySelector(".emptyEmail");
+//userPassword
 let userPassword = document.getElementById('userPassword');
 let emptyPassword = document.querySelector(".emptyPassword");
+
+let userFirstNameInput = document.querySelector('.userFirstNameInput');
+let userLastNameInput = document.querySelector('.userLastNameInput');
+let userEmailInput = document.querySelector('.userEmailInput');
+let userPasswordInput = document.querySelector('.userPasswordInput');
+
 let submitData = document.querySelector('.submitData');
 let errorIcon = document.querySelectorAll('.errorIcon');
 
-
-
-function checkFirstName() {
-  if(userFirstName.value === ''){
-    emptyFirstName.textContent = 'First Name cannot be empty';
+function validateUserFirstName(){
+  if(userFirstName.value===''){
     for(i = 0; i < errorIcon.length; i++){
-      if (errorIcon[0].style.visibility = 'hidden'){
-        errorIcon[0].style.visibility = 'visible';
-      }
+      errorIcon[0].style.visibility = 'visible';
+      emptyFirstName.textContent = 'First Name cannot be empty';
+      userFirstNameInput.style.border = '1px solid hsl(0, 100%, 74%) ';
     }
-  }
-  else{
+  }else{
     emptyFirstName.textContent = '';
-    for(i = 0; i < errorIcon.length; i++){
-      if (errorIcon[0].style.visibility = 'visible'){
-        errorIcon[0].style.visibility = 'hidden';
-      }
-    }
+    errorIcon[0].style.visibility = 'hidden';
+    userFirstNameInput.style.border = '1px solid #dbd9d9';
   }
-};
+}
 
-function checkLastName() {
-  if(userLastName.value === ''){
-    emptyLastName.textContent = 'Last Name cannot be empty';
+function validateUserLastName() {
+  if(userLastName.value===''){
     for(i = 0; i < errorIcon.length; i++){
-      if (errorIcon[1].style.visibility = 'hidden'){
-        errorIcon[1].style.visibility = 'visible';
-      }
+      errorIcon[1].style.visibility = 'visible';
+      emptyLastName.textContent = 'Last Name cannot be empty';
+      userLastNameInput.style.border = '1px solid hsl(0, 100%, 74%) ';
     }
   }else{
     emptyLastName.textContent = '';
-    for(i = 0; i < errorIcon.length; i++){
-      if (errorIcon[1].style.visibility = 'visible'){
-        errorIcon[1].style.visibility = 'hidden';
-      }
-    }
+    errorIcon[1].style.visibility = 'hidden';
+    userLastNameInput.style.border = '1px solid #dbd9d9';
   }
-};
+}
 
-function checkEmail() {
+function validateUserEmail() {
   if(userEmail.value===''){
-    emptyEmail.textContent = 'Looks like this is not an email';
     for(i = 0; i < errorIcon.length; i++){
-      if (errorIcon[2].style.visibility = 'hidden'){
-        errorIcon[2].style.visibility = 'visible';
-      }
+      errorIcon[2].style.visibility = 'visible';
+      emptyEmail.textContent = 'Last Name cannot be empty';
+      userEmailInput.style.border = '1px solid hsl(0, 100%, 74%) ';
     }
   }else{
     emptyEmail.textContent = '';
-    for(i = 0; i < errorIcon.length; i++){
-      if (errorIcon[2].style.visibility = 'visible'){
-        errorIcon[2].style.visibility = 'hidden';
-      }
-    }
+    errorIcon[2].style.visibility = 'hidden';
+    userEmailInput.style.border = '1px solid #dbd9d9';
   }
-};
+}
 
-function checkPassword() {
+function validateUserPassword() {
   if(userPassword.value===''){
-    emptyPassword.textContent = 'Password cannot be empty';
     for(i = 0; i < errorIcon.length; i++){
-      if (errorIcon[3].style.visibility = 'hidden'){
-        errorIcon[3].style.visibility = 'visible';
-      }
+      errorIcon[3].style.visibility = 'visible';
+      emptyPassword.textContent = 'Last Name cannot be empty';
+      userPasswordInput.style.border = '1px solid hsl(0, 100%, 74%) ';
     }
   }else{
     emptyPassword.textContent = '';
-    for(i = 0; i < errorIcon.length; i++){
-      if (errorIcon[3].style.visibility = 'visible'){
-        errorIcon[3].style.visibility = 'hidden';
-      }
-    }
+    errorIcon[3].style.visibility = 'hidden';
+    userPasswordInput.style.border = '1px solid #dbd9d9';
   }
-};
+}
 
-submitData.addEventListener('click', checkFirstName,true)
-submitData.addEventListener('click', checkLastName,true)
-submitData.addEventListener('click', checkEmail,true)
-submitData.addEventListener('click', checkPassword,false)
-submitData.addEventListener('click', styleChange,false)
+submitData.addEventListener('click', validateUserFirstName)
+submitData.addEventListener('click', validateUserLastName)
+submitData.addEventListener('click', validateUserEmail)
+submitData.addEventListener('click', validateUserPassword)
 
-userLastName.addEventListener('blur',checkFirstName,true);
-userFirstName.addEventListener('blur',checkLastName,true);
-userEmail.addEventListener('blur',checkEmail,false);
-userPassword.addEventListener('blur',checkPassword,false);
+
+
+
