@@ -29,11 +29,13 @@ function validateUserFirstName(){
       errorIcon[0].style.visibility = 'visible';
       emptyFirstName.textContent = 'First Name cannot be empty';
       userFirstNameInput.style.border = '1px solid hsl(0, 100%, 74%) ';
+      userFirstName.placeholder = '';
     }
   }else{
     emptyFirstName.textContent = '';
     errorIcon[0].style.visibility = 'hidden';
     userFirstNameInput.style.border = '1px solid #dbd9d9';
+    userFirstName.placeholder = 'First Name';
   }
 }
 
@@ -43,25 +45,31 @@ function validateUserLastName() {
       errorIcon[1].style.visibility = 'visible';
       emptyLastName.textContent = 'Last Name cannot be empty';
       userLastNameInput.style.border = '1px solid hsl(0, 100%, 74%) ';
+      userLastName.placeholder = '';
     }
   }else{
     emptyLastName.textContent = '';
     errorIcon[1].style.visibility = 'hidden';
     userLastNameInput.style.border = '1px solid #dbd9d9';
+    userLastName.placeholder = 'Last Name';
   }
 }
 
 function validateUserEmail() {
-  if(userEmail.value===''){
+  if(userEmail.value==='' || userEmail.value==='email@example.com'){
     for(i = 0; i < errorIcon.length; i++){
       errorIcon[2].style.visibility = 'visible';
       emptyEmail.textContent = 'Last Name cannot be empty';
-      userEmailInput.style.border = '1px solid hsl(0, 100%, 74%) ';
+      userEmailInput.style.border = '1px solid hsl(0, 100%, 74%)';
+      userEmail.placeholder = 'email@example.com';
+      userEmail.setAttribute('class', 'form-control change')
     }
   }else{
-    emptyEmail.textContent = '';
+  emptyEmail.textContent = '';
     errorIcon[2].style.visibility = 'hidden';
     userEmailInput.style.border = '1px solid #dbd9d9';
+    userEmail.placeholder = 'Email Address';
+    userEmail.setAttribute('class', '')
   }
 }
 
@@ -71,11 +79,13 @@ function validateUserPassword() {
       errorIcon[3].style.visibility = 'visible';
       emptyPassword.textContent = 'Last Name cannot be empty';
       userPasswordInput.style.border = '1px solid hsl(0, 100%, 74%) ';
+      userPassword.placeholder = '';
     }
   }else{
     emptyPassword.textContent = '';
     errorIcon[3].style.visibility = 'hidden';
     userPasswordInput.style.border = '1px solid #dbd9d9';
+    userPassword.placeholder = 'Password';
   }
 }
 
@@ -83,7 +93,3 @@ submitData.addEventListener('click', validateUserFirstName)
 submitData.addEventListener('click', validateUserLastName)
 submitData.addEventListener('click', validateUserEmail)
 submitData.addEventListener('click', validateUserPassword)
-
-
-
-

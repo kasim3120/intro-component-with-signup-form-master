@@ -146,6 +146,7 @@ right{
                 border-radius: 5px ;
                 padding:20px;
                 margin:20px;
+                
                 .userFirstNameInput, .userLastNameInput, .userEmailInput, .userPasswordInput{
                     margin-bottom: 10px;
                     display:flex;
@@ -153,12 +154,12 @@ right{
                     border-radius: 5px;
                     border:1px solid #dbd9d9;
                     background: #fff;
+                    
                     input{
                         margin:0.1rem 1rem;
                         padding:1rem 0.5rem;
                         width:80%;
                         border: none;
-                        outline: none;
                         font-size: 16px;
                     }
                     .errorIcon{
