@@ -67,12 +67,13 @@ right form .userFirstNameInput, right form .userLastNameInput, right form .userE
   border-radius: 5px;
   border: 1px solid #dbd9d9;
   background: #fff;
+  justify-content: space-between;
 }
 
 right form .userFirstNameInput input, right form .userLastNameInput input, right form .userEmailInput input, right form .userPasswordInput input {
-  margin: 0.1rem 1rem;
+  margin: 0.1rem 0rem;
   padding: 1rem;
-  width: 80%;
+  width: 90%;
   border: none;
   outline: none;
   font-weight: 900;
@@ -81,6 +82,8 @@ right form .userFirstNameInput input, right form .userLastNameInput input, right
 }
 
 right form .userFirstNameInput .errorIcon, right form .userLastNameInput .errorIcon, right form .userEmailInput .errorIcon, right form .userPasswordInput .errorIcon {
+  margin: 5px;
+  width: auto;
   visibility: hidden;
 }
 
