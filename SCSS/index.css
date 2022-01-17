@@ -1,14 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url(../images/bg-intro-desktop.png) #ff7a7a;
 }
 
@@ -41,7 +48,8 @@ right button {
   width: 500px;
   border-radius: 5px;
   background: #6055a5;
-  box-shadow: 0 8px rgba(105, 105, 105, 0.315);
+  -webkit-box-shadow: 0 8px rgba(105, 105, 105, 0.315);
+          box-shadow: 0 8px rgba(105, 105, 105, 0.315);
   border: none;
   color: #fff;
   font-weight: 600;
@@ -53,8 +61,13 @@ right button .small-font {
 
 right form {
   width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #fff;
   border-radius: 5px;
   padding: 20px 50px;
@@ -62,12 +75,18 @@ right form {
 
 right form .userFirstNameInput, right form .userLastNameInput, right form .userEmailInput, right form .userPasswordInput {
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
   border: 1px solid #dbd9d9;
   background: #fff;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 right form .userFirstNameInput input, right form .userLastNameInput input, right form .userEmailInput input, right form .userPasswordInput input {
@@ -78,6 +97,7 @@ right form .userFirstNameInput input, right form .userLastNameInput input, right
   outline: none;
   font-weight: 900;
   background: #fff;
+  -webkit-transition: background-color 5000s ease-out 0.5s;
   transition: background-color 5000s ease-out 0.5s;
 }
 
@@ -106,23 +126,35 @@ right form .submitData {
   width: auto;
   padding: 10px 30px;
   background: #38cc8c;
-  box-shadow: 0 5px #50b489;
+  -webkit-box-shadow: 0 5px #50b489;
+          box-shadow: 0 5px #50b489;
   cursor: pointer;
 }
 
 right form .submitData:hover {
   background-color: #67febd;
-  box-shadow: 0 5px #94d1b7;
+  -webkit-box-shadow: 0 5px #94d1b7;
+          box-shadow: 0 5px #94d1b7;
 }
 
 @media only screen and (max-width: 414px) {
   main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     margin: auto;
     width: auto;
@@ -139,22 +171,41 @@ right form .submitData:hover {
   }
   main right {
     width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main right button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px;
     margin: 20px;
     width: auto;
   }
   main right form {
     width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
@@ -162,8 +213,12 @@ right form .submitData:hover {
   }
   main right form .userFirstNameInput, main right form .userLastNameInput, main right form .userEmailInput, main right form .userPasswordInput {
     margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 5px;
     border: 1px solid #dbd9d9;
     background: #fff;
@@ -179,6 +234,7 @@ right form .submitData:hover {
     visibility: hidden;
   }
   main right form .emptyFirstName, main right form .emptyLastName, main right form .emptyEmail, main right form .emptyPassword {
+    display: none;
     margin: auto 3px;
     text-align: right;
     color: #ff7a7a;
@@ -195,7 +251,8 @@ right form .submitData:hover {
     margin: 10px 0px;
     padding: 10px 30px;
     background: #34cb8a;
-    box-shadow: 0 5px #4db386;
+    -webkit-box-shadow: 0 5px #4db386;
+            box-shadow: 0 5px #4db386;
   }
   main right form .rightFooterText {
     padding: 5px 10px;

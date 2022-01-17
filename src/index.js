@@ -23,7 +23,6 @@ let userPasswordInput = document.querySelector('.userPasswordInput');
 let submitData = document.querySelector('.submitData');
 let errorIcon = document.querySelectorAll('.errorIcon');
 
-
 function validateUserFirstName(){
   if(userFirstName.value===''){
     for(i = 0; i < errorIcon.length; i++){
@@ -74,7 +73,7 @@ function validateUserEmail() {
   }
 }
 
-function validateUserPassword() {
+function validateUserPassword(e) {
   if(userPassword.value===''){
     for(i = 0; i < errorIcon.length; i++){
       errorIcon[3].style.visibility = 'visible';
@@ -90,8 +89,6 @@ function validateUserPassword() {
   }
 }
 
-
-
 submitData.addEventListener('click', validateUserFirstName)
 submitData.addEventListener('click', validateUserLastName)
 submitData.addEventListener('click', validateUserEmail)
@@ -100,8 +97,6 @@ submitData.addEventListener('click', validateUserPassword)
 let focusTarget = (e) => {
   e.currentTarget.style.border = '2px solid hsl(228, 45%, 44%)'
 }
-
-
 
 userFirstNameInput.addEventListener('click', focusTarget)
 userFirstNameInput.addEventListener('focusout', validateUserFirstName)

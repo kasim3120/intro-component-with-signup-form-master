@@ -84,7 +84,7 @@ right{
         .emptyFirstName, .emptyLastName, .emptyEmail,.emptyPassword{
             margin:auto 3px;
             text-align: right;
-            color:hsl(0, 100%, 74%)
+            color:hsl(0, 100%, 74%);
         }
         p{
             font-size: 8px;
@@ -171,9 +171,10 @@ right{
         
                 }
                 .emptyFirstName, .emptyLastName, .emptyEmail,.emptyPassword{
+                    display: none;
                     margin:auto 3px;
                     text-align: right;
-                    color:hsl(0, 100%, 74%)
+                    color:hsl(0, 100%, 74%);
                 }
                 p{
                     font-size: 8px;
